@@ -197,6 +197,26 @@ header .burger {
   color: #18203a;
 }
 
+#projects {
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #4a557a;
+}
+#projects .elements {
+  display: flex;
+  justify-content: center;
+}
+#projects .elements .title {
+  font-size: 30px;
+  color: #18203a;
+}
+
+footer {
+  height: 10vh;
+}
+
 /*#region MEDIA*/
 @media (max-width: 780px) {
   header {

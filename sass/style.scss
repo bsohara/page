@@ -217,6 +217,28 @@ header {
   }
 }
 
+#projects{
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: $def-color;
+  .elements {
+    display: flex;
+    justify-content: center;
+
+    .title {
+      font-size: 30px;
+      color: $xp-def-color;
+    }
+
+  }
+}
+
+footer {
+  height: 10vh;
+}
+
 /*#region MEDIA*/
 @media (max-width: 780px) {
   header {
