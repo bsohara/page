@@ -150,9 +150,9 @@ header .burger {
 }
 #about .texts .descr {
   width: auto;
-  padding: 10px;
+  padding: 20px;
   text-align: justify;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 /*#endregion*/
