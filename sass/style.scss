@@ -267,9 +267,7 @@ header {
     justify-content: center;
     align-items: center;
     .title {
-      display: flex;
-      justify-content: center;
-      text-align: center;
+      display: grid;
       font-size: 25px;
     }
     .icons {
@@ -282,6 +280,6 @@ header {
     }
   }
 
-  
+
 }
 /*#endregion*/

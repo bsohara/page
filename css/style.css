@@ -240,9 +240,7 @@ header .burger {
     align-items: center;
   }
   #skills .title {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    display: grid;
     font-size: 25px;
   }
   #skills .icons {
