@@ -182,6 +182,21 @@ header .burger {
 }
 
 /*#endregion*/
+#experiences {
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+#experiences .elements {
+  display: flex;
+  justify-content: center;
+}
+#experiences .elements .title {
+  font-size: 30px;
+  color: #18203a;
+}
+
 /*#region MEDIA*/
 @media (max-width: 780px) {
   header {

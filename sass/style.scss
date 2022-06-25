@@ -200,6 +200,23 @@ header {
 }
 /*#endregion*/
 
+#experiences {
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  .elements {
+    display: flex;
+    justify-content: center;
+
+    .title {
+      font-size: 30px;
+      color: $xp-def-color;
+    }
+
+  }
+}
+
 /*#region MEDIA*/
 @media (max-width: 780px) {
   header {
