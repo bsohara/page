@@ -30,6 +30,7 @@
 
 /*#region Header*/
 header {
+  z-index: 9;
   position: fixed;
   top: 0;
   left: 0;
@@ -95,6 +96,7 @@ header {
 
   .elements {
     display: flex;
+
     .texts {
       margin: auto 50px;
       display: flex;
@@ -110,6 +112,55 @@ header {
         font-size: 33px;
       }
     }
+  }
+}
+/*#endregion*/
+
+/*#region About Me*/
+#aboutMe {
+  height: 100vh;
+  background: $def-quat-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .elements {
+    margin-top: 100px;
+    display: flex;
+
+    .profImg > img {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+    }
+
+    .profItems {
+      margin-left: 75px;
+
+      .title {
+        color: $def-light;
+        font-size: 35px;
+      }
+
+      .smIcons {
+        color: $def-light;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+        i {
+          font-size: 35px;
+          padding: 5px;
+        }
+      }
+
+      .descr {
+        color: $def-light;
+        text-align: justify;
+        font-size: 15px;
+        font-style: oblique;
+      }
+    }
+
   }
 }
 /*#endregion*/
