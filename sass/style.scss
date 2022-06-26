@@ -90,17 +90,18 @@ header {
   justify-content: center;
 
   .texts {
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: $def-light;
 
     h1 {
-      font-size: 60px;
+      font-size: 66px;
     }
 
     h2 {
-      font-size: 30px;
+      font-size: 33px;
     }
 
   }
@@ -167,10 +168,10 @@ header {
       margin: auto;
 
       h1 {
-        font-size: 48px;
+        font-size: 54px;
       }
       h2 {
-        font-size: 24px;
+        font-size: 27px;
       }
     }
   }
