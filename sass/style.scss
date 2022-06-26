@@ -27,3 +27,151 @@
   color: $danger;
 }
 /*#endregion*/
+
+/*#region Header*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background: $def-prim-color;
+
+  .burger {
+    display: none;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+
+    a {
+      color: $def-light;
+      text-decoration: none;
+      font-size: 50px;
+      font-weight: bold;
+    }
+  }
+
+  .menu > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 120px;
+    border-bottom: 5px solid transparent;
+
+    li > a {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      height: 120px;
+      color: $def-light;
+
+      &:hover {
+        color: $def-prim-color;
+        background-color: $def-light;
+        border-bottom: 5px solid $def-secn-color;
+        transition: 400ms;
+      }
+    }
+  }
+}
+/*#endregion*/
+
+/*#region Banner*/
+#banner {
+  background: $def-tert-color;
+  height: calc(100vh - 119px);
+  display: flex;
+  justify-content: center;
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $def-light;
+
+    h1 {
+      font-size: 60px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+  }
+}
+/*#endregion*/
+
+@keyframes lampWink {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  65% {
+    opacity: 0.45;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+
+    .menu {
+      display: none;
+    }
+
+    .burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      .bar {
+        height: 5px;
+        width: 35px;
+        margin: 5px;
+        background: $def-light;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  #banner {
+    .lottie {
+      margin: auto;
+    }
+
+    .texts {
+      margin: auto;
+
+      h1 {
+        font-size: 48px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+}

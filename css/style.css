@@ -31,199 +31,98 @@
 }
 
 /*#endregion*/
-/*#region HEADER*/
+/*#region Header*/
 header {
   display: flex;
-  height: 100px;
   justify-content: center;
   align-items: center;
-  background: #0e0e0e;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.95;
-}
-header .logo {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .logo a {
-  color: #4a557a;
-  text-decoration: none;
-}
-header .logo h1:hover {
-  color: #fefefe;
-  transition: 800ms;
-}
-header .menu {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .menu ul {
-  display: flex;
-  list-style: none;
-}
-header .menu ul li {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  border-bottom: 5px solid transparent;
-}
-header .menu ul li:hover {
-  height: 100px;
-  background: #919191;
-  color: #fefefe;
-  transition: 800ms;
-  border-bottom: 5px solid #172247;
-}
-header .menu ul li > a {
-  text-decoration: none;
-  color: #4a557a;
+  height: 120px;
+  background: #1a1a1a;
 }
 header .burger {
   display: none;
 }
-
-/*#endregion*/
-/*#region BANNER*/
-.banner {
+header .title {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-image: url("../img/garrett-parker-DlkF4-dbCOU-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 120px;
 }
-.banner .texts {
-  color: #29314b;
+header .title a {
+  color: #cecece;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: bold;
 }
-.banner .texts > .name > h1 {
-  font-size: 100px;
-  font-weight: 600;
-  mix-blend-mode: overlay;
-}
-.banner .texts > .title > h2 {
-  font-size: 35px;
-  font-weight: 400;
-  mix-blend-mode: overlay;
-}
-
-/*#endregion*/
-/*#region ABOUT*/
-#about {
-  height: 100vh;
+header .menu > ul {
   display: flex;
   justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 120px;
+  border-bottom: 5px solid transparent;
 }
-#about .texts {
-  margin-top: 50px;
-  padding: 45px;
-}
-#about .texts .photo {
-  text-align: center;
-}
-#about .texts .photo .social > a {
-  color: #29314b;
+header .menu > ul li > a {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  cursor: pointer;
+  height: 120px;
+  color: #cecece;
 }
-#about .texts .photo .social > a i {
-  font-size: 35px;
-  padding: 10px;
-}
-#about .texts .photo .social > a i:hover {
-  color: #acacac;
+header .menu > ul li > a:hover {
+  color: #1a1a1a;
+  background-color: #cecece;
+  border-bottom: 5px solid #3b3b3b;
   transition: 400ms;
 }
-#about .texts .photo img {
-  height: 150px;
-  border-radius: 50%;
+
+/*#endregion*/
+/*#region Banner*/
+#banner {
+  background: #101010;
+  height: calc(100vh - 119px);
+  display: flex;
+  justify-content: center;
 }
-#about .texts .title {
-  font-size: 25px;
+#banner .texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #cecece;
 }
-#about .texts .descr {
-  width: auto;
-  padding: 20px;
-  text-align: justify;
-  font-size: 18px;
+#banner .texts h1 {
+  font-size: 60px;
+}
+#banner .texts h2 {
+  font-size: 30px;
 }
 
 /*#endregion*/
-/*#region SKILLS*/
-#skills {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: #18203a;
-  padding: 100px;
+@keyframes lampWink {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  65% {
+    opacity: 0.45;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-#skills .title {
-  height: 30vh;
-  width: 100%;
-  font-size: 30px;
-  color: #fafafa;
-}
-#skills .icons {
-  height: 70vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#skills .icons i {
-  font-size: 100px;
-  padding: 25px;
-}
-
-/*#endregion*/
-#experiences {
-  height: 100vh;
-  padding: 100px;
-  display: flex;
-  flex-direction: column;
-}
-#experiences .elements {
-  display: flex;
-  justify-content: center;
-}
-#experiences .elements .title {
-  font-size: 30px;
-  color: #18203a;
-}
-
-#projects {
-  height: 100vh;
-  padding: 100px;
-  display: flex;
-  flex-direction: column;
-  background-color: #4a557a;
-}
-#projects .elements {
-  display: flex;
-  justify-content: center;
-}
-#projects .elements .title {
-  font-size: 30px;
-  color: #18203a;
-}
-
-footer {
-  height: 10vh;
-}
-
-/*#region MEDIA*/
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   header {
-    padding-left: 5px;
-    padding-right: 5px;
+    display: flex;
   }
   header .menu {
     display: none;
@@ -233,46 +132,27 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100px;
-  }
-  header .burger .bars {
-    border-radius: 5px;
-    margin: 5px 0;
-    height: 5px;
-    width: 39px;
-    background: #4a557a;
-  }
-  header .burger:hover {
     cursor: pointer;
   }
-  .banner {
-    display: grid;
-    justify-content: center;
-    text-align: center;
+  header .burger .bar {
+    height: 5px;
+    width: 35px;
+    margin: 5px;
+    background: #cecece;
+    border-radius: 2px;
   }
-  .banner .texts > .name > h1 {
-    font-size: 75px;
+  #banner .lottie {
+    margin: auto;
   }
-  #about {
-    display: block;
+  #banner .texts {
+    margin: auto;
   }
-  #skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  #banner .texts h1 {
+    font-size: 48px;
   }
-  #skills .title {
-    display: grid;
-    font-size: 25px;
-  }
-  #skills .icons {
-    display: flex;
-    justify-content: center;
-  }
-  #skills .icons i {
-    font-size: 55px;
+  #banner .texts h2 {
+    font-size: 24px;
   }
 }
-/*#endregion*/
 
 /*# sourceMappingURL=style.css.map */
