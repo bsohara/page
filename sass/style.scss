@@ -10,9 +10,6 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-body {
-  overflow-x: hidden;
-}
 .container {
   width: 1140px;
   display: flex;
@@ -99,7 +96,9 @@ header {
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px;
+  margin: auto;
 
   .elements {
     padding-top: 50px;
@@ -163,6 +162,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 
   .elements {
     width: 100%;
@@ -328,7 +328,7 @@ header {
   }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 508px) {
   header {
     display: flex;
 

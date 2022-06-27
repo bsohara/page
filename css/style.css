@@ -10,10 +10,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .container {
   width: 1140px;
   display: flex;
@@ -98,7 +94,9 @@ header .menu > ul li > a:hover {
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px;
+  margin: auto;
 }
 #banner .elements {
   padding-top: 50px;
@@ -153,6 +151,7 @@ header .menu > ul li > a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 #aboutMe .elements {
   width: 100%;
@@ -296,7 +295,7 @@ header .menu > ul li > a:hover {
     opacity: 1;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 508px) {
   header {
     display: flex;
   }
