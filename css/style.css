@@ -293,7 +293,7 @@ header .menu > ul li > a:hover {
     font-size: 60px;
   }
   #aboutMe .elements .profItems > .smBtn {
-    display: block;
+    display: flex;
   }
   #aboutMe .elements .profItems > .descr {
     text-align: justify;
