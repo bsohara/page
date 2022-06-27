@@ -23,15 +23,19 @@ body {
 }
 
 .success {
-  color: #49e749;
+  background-color: #49e749;
 }
 
 .warning {
-  color: #e5ee66;
+  background-color: #e5ee66;
 }
 
 .danger {
-  color: #ff6666;
+  background-color: #ff6666;
+}
+
+.undone {
+  background-color: #1a1a1a;
 }
 
 /*#endregion*/
@@ -212,6 +216,63 @@ header .menu > ul li > a:hover {
 }
 #aboutMe .elements .profItems .descr p {
   margin-top: 10px;
+}
+
+/*#endregion*/
+/*#region Skills*/
+#skills {
+  min-height: 100vh;
+  background: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#skills .elements {
+  display: block;
+}
+#skills .elements .title {
+  font-size: 50px;
+  margin-top: 150px;
+  text-align: center;
+}
+#skills .elements .title h1 {
+  font-weight: 300;
+  color: #cecece;
+}
+#skills .elements .card-list {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#skills .elements .card-list .card {
+  height: 200px;
+  width: 200px;
+  background: #3b3b3b;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#skills .elements .card-list .card .card-head > i {
+  font-size: 75px;
+  margin-top: 10px;
+}
+#skills .elements .card-list .card .card-body {
+  width: 75%;
+  display: flex;
+  margin-top: 45px;
+  gap: 5px;
+}
+#skills .elements .card-list .card .card-body .bar {
+  height: 5px;
+  width: 40px;
+  border-radius: 5px;
 }
 
 /*#endregion*/

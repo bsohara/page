@@ -21,13 +21,16 @@ body {
   padding-right: 20px;
 }
 .success {
-  color: $success;
+  background-color: $success;
 }
 .warning {
-  color: $warning;
+  background-color: $warning;
 }
 .danger {
-  color: $danger;
+  background-color: $danger;
+}
+.undone {
+  background-color: $def-prim-dark;
 }
 /*#endregion*/
 
@@ -42,7 +45,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 120px;
-  background: $def-prim-color;
+  background: $def-prim-dark;
 
   .burger {
     display: none;
@@ -80,9 +83,9 @@ header {
       color: $def-light;
 
       &:hover {
-        color: $def-prim-color;
+        color: $def-prim-dark;
         background-color: $def-light;
-        border-bottom: 5px solid $def-secn-color;
+        border-bottom: 5px solid $def-secn-dark;
         transition: 400ms;
       }
     }
@@ -92,7 +95,7 @@ header {
 
 /*#region Banner*/
 #banner {
-  background: $def-tert-color;
+  background: $def-tert-dark;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -156,7 +159,7 @@ header {
 /*#region About Me*/
 #aboutMe {
   min-height: 100vh;
-  background: $def-tert-color;
+  background: $def-tert-dark;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,6 +234,71 @@ header {
       }
     }
   }
+}
+/*#endregion*/
+
+/*#region Skills*/
+#skills {
+  min-height: 100vh;
+  background: $def-quat-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  .elements {
+    display: block;
+
+    .title {
+      font-size: 50px;
+      margin-top: 150px;
+      text-align: center;
+      h1 {
+        font-weight: 300;
+        color: $def-light;
+      }
+    }
+
+    .card-list {
+      margin-top: 50px;
+      margin-bottom: 150px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  
+      .card {
+        height: 200px;
+        width: 200px;
+        background: $def-secn-dark;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+        .card-head > i {
+          font-size: 75px;
+          margin-top: 10px;
+        }
+  
+        .card-body {
+          width: 75%;
+          display: flex;
+          margin-top: 45px;
+          gap: 5px;
+  
+          .bar {
+            height: 5px;
+            width: 40px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  
 }
 /*#endregion*/
 
