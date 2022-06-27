@@ -151,75 +151,71 @@ header {
 
 /*#region About Me*/
 #aboutMe {
-  min-height: 150vh;
+  min-height: 100vh;
   background: $def-tert-color;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
 
   .elements {
-    height: 70vh;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    .profImg > img {
-      margin-top: 75px;
-      height: 250px;
-      border-radius: 50%;
+    .profImg {
+      width: 30%;
+      margin: auto;
+
+      img {
+        width: 80%;
+        border-radius: 50%;
+      }
     }
 
     .profItems {
-      text-align: justify;
+      width: 70%;
+      margin: auto;
+      color: $def-light;
 
-      .title {
-        color: $def-light;
-        font-size: 25px;
+      .title > h1 {
+        font-size: 75px;
+        font-weight: 300;
       }
+      #linkedin {
+        margin-left: 10px;
+      }
+      .smBtn > button {
+        margin: 20px auto;
+        width: 150px;
+        height: 50px;
+        border: 2px solid $def-light;
+        border-radius: 10px;
+        background: transparent;
 
-      .smBtn {
-        padding: 30px;
-        display: flex;
-        justify-content: center;
+        a {
+          color: $def-light;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          text-decoration: none;
 
-        button {
-          height: 45px;
-          width: 150px;
-          border-radius: 5px;
-          background: transparent;
-          margin: 20px;
-          border: 2px solid $def-light;
-  
-          a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            color: $def-light;
-          
-            i {
-              font-size: 30px;
-            }
-
-            p {
-              padding: 10px;
-            }
+          i {
+            font-size: 30px;
           }
-
-          &:hover {
-            transition: 400ms;
-            background: $def-light;
-            a, i, p {
-              color: $def-darks;
-            }
+          p {
+            
+            font-size: 15px;
           }
         }
-      }
 
-      .descr {
-        color: $def-light;
+        &:hover {
+          transition: 400ms;
+          background: $def-light;
+          a,
+          i,
+          p {
+            color: $def-darks;
+          }
+        }
       }
     }
   }
@@ -252,7 +248,7 @@ header {
   }
 }
 
-@media (max-width: 608px) {
+@media (max-width: 880px) {
   header {
     display: flex;
 
@@ -314,8 +310,34 @@ header {
   }
 
   #aboutMe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 150px;
+
+    .elements {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .profImg {
+        padding: auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .profItems > .title h1{
+        font-size: 60px;
+      }
+      
+      .profItems > .smBtn {
+        display: block;
+      }
+
+      .profItems > .descr {
+        text-align: justify;
+      }
+
+    }
   }
 }

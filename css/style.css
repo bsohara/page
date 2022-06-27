@@ -141,67 +141,65 @@ header .menu > ul li > a:hover {
 /*#endregion*/
 /*#region About Me*/
 #aboutMe {
-  min-height: 150vh;
+  min-height: 100vh;
   background: #101010;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
 }
 #aboutMe .elements {
-  height: 70vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-#aboutMe .elements .profImg > img {
-  margin-top: 75px;
-  height: 250px;
+#aboutMe .elements .profImg {
+  width: 30%;
+  margin: auto;
+}
+#aboutMe .elements .profImg img {
+  width: 80%;
   border-radius: 50%;
 }
 #aboutMe .elements .profItems {
-  text-align: justify;
-}
-#aboutMe .elements .profItems .title {
+  width: 70%;
+  margin: auto;
   color: #cecece;
-  font-size: 25px;
 }
-#aboutMe .elements .profItems .smBtn {
-  padding: 30px;
-  display: flex;
-  justify-content: center;
+#aboutMe .elements .profItems .title > h1 {
+  font-size: 75px;
+  font-weight: 300;
 }
-#aboutMe .elements .profItems .smBtn button {
-  height: 45px;
+#aboutMe .elements .profItems #linkedin {
+  margin-left: 10px;
+}
+#aboutMe .elements .profItems .smBtn > button {
+  margin: 20px auto;
   width: 150px;
-  border-radius: 5px;
-  background: transparent;
-  margin: 20px;
+  height: 50px;
   border: 2px solid #cecece;
+  border-radius: 10px;
+  background: transparent;
 }
-#aboutMe .elements .profItems .smBtn button a {
+#aboutMe .elements .profItems .smBtn > button a {
+  color: #cecece;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-decoration: none;
-  color: #cecece;
 }
-#aboutMe .elements .profItems .smBtn button a i {
+#aboutMe .elements .profItems .smBtn > button a i {
   font-size: 30px;
 }
-#aboutMe .elements .profItems .smBtn button a p {
-  padding: 10px;
+#aboutMe .elements .profItems .smBtn > button a p {
+  font-size: 15px;
 }
-#aboutMe .elements .profItems .smBtn button:hover {
+#aboutMe .elements .profItems .smBtn > button:hover {
   transition: 400ms;
   background: #cecece;
 }
-#aboutMe .elements .profItems .smBtn button:hover a, #aboutMe .elements .profItems .smBtn button:hover i, #aboutMe .elements .profItems .smBtn button:hover p {
+#aboutMe .elements .profItems .smBtn > button:hover a,
+#aboutMe .elements .profItems .smBtn > button:hover i,
+#aboutMe .elements .profItems .smBtn > button:hover p {
   color: #030303;
-}
-#aboutMe .elements .profItems .descr {
-  color: #cecece;
 }
 
 /*#endregion*/
@@ -225,7 +223,7 @@ header .menu > ul li > a:hover {
     opacity: 1;
   }
 }
-@media (max-width: 608px) {
+@media (max-width: 880px) {
   header {
     display: flex;
   }
@@ -277,9 +275,28 @@ header .menu > ul li > a:hover {
     font-size: 15px;
   }
   #aboutMe {
-    display: flex;
+    padding-top: 150px;
+  }
+  #aboutMe .elements {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+  }
+  #aboutMe .elements .profImg {
+    padding: auto;
+  }
+  #aboutMe .elements .profImg img {
+    width: 100%;
+  }
+  #aboutMe .elements .profItems > .title h1 {
+    font-size: 60px;
+  }
+  #aboutMe .elements .profItems > .smBtn {
+    display: block;
+  }
+  #aboutMe .elements .profItems > .descr {
+    text-align: justify;
   }
 }
 
