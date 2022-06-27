@@ -190,6 +190,7 @@ header .menu > ul li > a:hover {
   font-size: 30px;
 }
 #aboutMe .elements .profItems .smBtn > button a p {
+  text-align: justify;
   font-size: 15px;
 }
 #aboutMe .elements .profItems .smBtn > button:hover {
@@ -200,6 +201,12 @@ header .menu > ul li > a:hover {
 #aboutMe .elements .profItems .smBtn > button:hover i,
 #aboutMe .elements .profItems .smBtn > button:hover p {
   color: #030303;
+}
+#aboutMe .elements .profItems .descr {
+  font-size: 12px;
+}
+#aboutMe .elements .profItems .descr p {
+  margin-top: 10px;
 }
 
 /*#endregion*/
@@ -223,7 +230,7 @@ header .menu > ul li > a:hover {
     opacity: 1;
   }
 }
-@media (max-width: 880px) {
+@media (max-width: 528px) {
   header {
     display: flex;
   }
@@ -250,12 +257,12 @@ header .menu > ul li > a:hover {
   #banner .elements {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   #banner .elements .lottie > lottie-player {
     margin-top: 50px;
-    height: 400px;
-    width: 400px;
+    width: 100%;
   }
   #banner .elements .texts {
     text-align: center;

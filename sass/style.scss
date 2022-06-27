@@ -202,7 +202,7 @@ header {
             font-size: 30px;
           }
           p {
-            
+            text-align: justify;
             font-size: 15px;
           }
         }
@@ -215,6 +215,12 @@ header {
           p {
             color: $def-darks;
           }
+        }
+      }
+      .descr {
+        font-size: 12px;
+        p {
+          margin-top: 10px;
         }
       }
     }
@@ -248,7 +254,7 @@ header {
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 528px) {
   header {
     display: flex;
 
@@ -279,12 +285,12 @@ header {
     .elements {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
 
       .lottie > lottie-player {
         margin-top: 50px;
-        height: 400px;
-        width: 400px;
+        width: 100%;
       }
 
       .texts {
@@ -326,10 +332,10 @@ header {
         }
       }
 
-      .profItems > .title h1{
+      .profItems > .title h1 {
         font-size: 60px;
       }
-      
+
       .profItems > .smBtn {
         display: flex;
       }
@@ -337,7 +343,6 @@ header {
       .profItems > .descr {
         text-align: justify;
       }
-
     }
   }
 }
