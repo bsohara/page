@@ -68,7 +68,7 @@ header .menu > ul {
   border-bottom: 5px solid transparent;
 }
 header .menu > ul li > a {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,12 +90,13 @@ header .menu > ul li > a:hover {
   height: 100vh;
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 #banner .elements {
   display: flex;
 }
 #banner .elements .texts {
-  margin: auto 50px;
+  margin: auto 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,42 +112,19 @@ header .menu > ul li > a:hover {
 /*#endregion*/
 /*#region About Me*/
 #aboutMe {
+  display: flex;
   height: 100vh;
   background: #121212;
+  padding: 150px;
+}
+#aboutMe img {
+  height: 300px;
+  width: 300px;
+  border-radius: 25%;
+}
+#aboutMe .profItems {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#aboutMe .elements {
-  margin-top: 100px;
-  display: flex;
-}
-#aboutMe .elements .profImg > img {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-}
-#aboutMe .elements .profItems {
-  margin-left: 75px;
-}
-#aboutMe .elements .profItems .title {
-  color: #cecece;
-  font-size: 35px;
-}
-#aboutMe .elements .profItems .smIcons {
-  color: #cecece;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-#aboutMe .elements .profItems .smIcons i {
-  font-size: 35px;
-  padding: 5px;
-}
-#aboutMe .elements .profItems .descr {
-  color: #cecece;
-  text-align: justify;
-  font-size: 15px;
-  font-style: oblique;
+  flex-direction: column;
 }
 
 /*#endregion*/
@@ -170,7 +148,7 @@ header .menu > ul li > a:hover {
     opacity: 1;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 608px) {
   header {
     display: flex;
   }
@@ -204,10 +182,13 @@ header .menu > ul li > a:hover {
     text-align: center;
   }
   #banner .elements .texts h1 {
-    font-size: 54px;
+    font-size: 48px;
   }
   #banner .elements .texts h2 {
-    font-size: 27px;
+    font-size: 24px;
+  }
+  #banner #aboutMe {
+    display: block;
   }
 }
 

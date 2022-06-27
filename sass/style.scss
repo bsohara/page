@@ -68,7 +68,7 @@ header {
     border-bottom: 5px solid transparent;
 
     li > a {
-      padding: 20px;
+      padding: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -93,21 +93,22 @@ header {
   height: 100vh;
   display: flex;
   justify-content: center;
+  padding: 10px;
 
   .elements {
     display: flex;
 
     .texts {
-      margin: auto 50px;
+      margin: auto 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       color: $def-light;
-  
+
       h1 {
         font-size: 66px;
       }
-  
+
       h2 {
         font-size: 33px;
       }
@@ -118,50 +119,22 @@ header {
 
 /*#region About Me*/
 #aboutMe {
+  display: flex;
   height: 100vh;
   background: $def-quat-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  .elements {
-    margin-top: 100px;
-    display: flex;
+  padding: 150px;
 
-    .profImg > img {
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-    }
-
-    .profItems {
-      margin-left: 75px;
-
-      .title {
-        color: $def-light;
-        font-size: 35px;
-      }
-
-      .smIcons {
-        color: $def-light;
-        margin-top: 10px;
-        margin-bottom: 20px;
-
-        i {
-          font-size: 35px;
-          padding: 5px;
-        }
-      }
-
-      .descr {
-        color: $def-light;
-        text-align: justify;
-        font-size: 15px;
-        font-style: oblique;
-      }
-    }
-
+  img {
+    height: 300px;
+    width: 300px;
+    border-radius: 25%;
   }
+
+  .profItems {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 /*#endregion*/
 
@@ -191,7 +164,7 @@ header {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 608px) {
   header {
     display: flex;
 
@@ -225,18 +198,22 @@ header {
       .lottie {
         margin-top: 100px;
       }
-  
+
       .texts {
         margin: auto;
         text-align: center;
-  
+
         h1 {
-          font-size: 54px;
+          font-size: 48px;
         }
         h2 {
-          font-size: 27px;
+          font-size: 24px;
         }
       }
+    }
+
+    #aboutMe {
+      display: block;
     }
   }
 }
