@@ -123,7 +123,7 @@ header {
         height: 60px;
         width: 120px;
         border: 2px solid $def-light;
-        border-radius: 4px;
+        border-radius: 10px;
         background-color: transparent;
 
         a {
@@ -160,6 +160,8 @@ header {
   .elements {
     width: 100%;
     display: flex;
+    margin-top: 150px;
+    margin-bottom: 300px;
 
     .profImg {
       width: 30%;
