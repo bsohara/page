@@ -371,6 +371,9 @@ header .menu > ul li > a:hover {
   #aboutMe .elements .profItems > .descr {
     text-align: justify;
   }
+  #skills .elements > .title > h1 {
+    font-size: 45px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
