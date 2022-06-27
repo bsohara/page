@@ -10,6 +10,9 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 .container {
   width: 1140px;
   display: flex;
@@ -96,6 +99,7 @@ header {
   padding: 10px;
 
   .elements {
+    padding-top: 50px;
     display: flex;
 
     .texts {
@@ -103,6 +107,7 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       color: $def-light;
 
       h1 {
@@ -112,6 +117,33 @@ header {
       h2 {
         font-size: 33px;
       }
+
+      button {
+        margin-top: 20px;
+        height: 60px;
+        width: 120px;
+        border: 2px solid $def-light;
+        border-radius: 4px;
+        background-color: transparent;
+
+        a {
+          text-decoration: none;
+          color: $def-light;
+
+          p {
+            font-size: 15px;
+            text-transform: uppercase;
+          }
+        }
+
+        &:hover {
+          transition: 400ms;
+          background-color: $def-light;
+          p {
+            color: $def-darks;
+          }
+        }
+      }
     }
   }
 }
@@ -119,22 +151,78 @@ header {
 
 /*#region About Me*/
 #aboutMe {
+  min-height: 150vh;
+  background: $def-tert-color;
   display: flex;
-  height: 100vh;
-  background: $def-quat-color;
-  padding: 150px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 
-  img {
-    height: 300px;
-    width: 300px;
-    border-radius: 25%;
-  }
-
-  .profItems {
+  .elements {
+    height: 70vh;
     display: flex;
     flex-direction: column;
-  }
+    justify-content: center;
+    align-items: center;
 
+    .profImg > img {
+      margin-top: 75px;
+      height: 250px;
+      border-radius: 50%;
+    }
+
+    .profItems {
+      text-align: justify;
+
+      .title {
+        color: $def-light;
+        font-size: 25px;
+      }
+
+      .smBtn {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+
+        button {
+          height: 45px;
+          width: 150px;
+          border-radius: 5px;
+          background: transparent;
+          margin: 20px;
+          border: 2px solid $def-light;
+  
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $def-light;
+          
+            i {
+              font-size: 30px;
+            }
+
+            p {
+              padding: 10px;
+            }
+          }
+
+          &:hover {
+            transition: 400ms;
+            background: $def-light;
+            a, i, p {
+              color: $def-darks;
+            }
+          }
+        }
+      }
+
+      .descr {
+        color: $def-light;
+      }
+    }
+  }
 }
 /*#endregion*/
 
@@ -190,30 +278,44 @@ header {
   }
 
   #banner {
+    height: 120vh;
+
     .elements {
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      .lottie {
-        margin-top: 100px;
+      .lottie > lottie-player {
+        margin-top: 50px;
+        height: 400px;
+        width: 400px;
       }
 
       .texts {
-        margin: auto;
         text-align: center;
 
         h1 {
-          font-size: 48px;
+          font-size: 42px;
         }
         h2 {
           font-size: 24px;
         }
+        button {
+          height: 45px;
+          width: 180px;
+
+          a > p {
+            padding: auto;
+            font-size: 15px;
+          }
+        }
       }
     }
+  }
 
-    #aboutMe {
-      display: block;
-    }
+  #aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
