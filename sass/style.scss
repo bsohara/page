@@ -1,15 +1,12 @@
-/*#region IMPORTS*/
-@import "./colors.scss";
-/*#endregion*/
+@import './colors.scss';
 
-/*#region DEFAULT*/
 * {
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+
 .container {
   width: 1140px;
   display: flex;
@@ -17,6 +14,11 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+body {
+  font-family: 'segoe ui';
+}
+
 .success {
   background-color: $success;
 }
@@ -29,66 +31,58 @@
 .undone {
   background-color: $def-prim-dark;
 }
-/*#endregion*/
 
-/*#region Header*/
+
 header {
-  z-index: 9;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  background: $def-prim-dark;
-
-  .burger {
+  .nav {
+    width: 100%;
+    background-color: $def-prim-dark;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 9;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+  }
+  
+  .nav > .nav-btn {
     display: none;
   }
-
-  .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-
-    a {
-      color: $def-light;
-      text-decoration: none;
-      font-size: 50px;
-      font-weight: bold;
-    }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
   }
-
-  .menu > ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    height: 120px;
-    border-bottom: 5px solid transparent;
-
-    li > a {
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      height: 120px;
-      color: $def-light;
-
-      &:hover {
-        color: $def-prim-dark;
-        background-color: $def-light;
-        border-bottom: 5px solid $def-secn-dark;
-        transition: 400ms;
-      }
-    }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 400ms;
+  }
+  
+  .nav > #nav-check {
+    display: none;
   }
 }
-/*#endregion*/
 
 /*#region Banner*/
 #banner {
@@ -144,6 +138,7 @@ header {
         &:hover {
           transition: 400ms;
           background-color: $def-light;
+
           p {
             color: $def-darks;
           }
@@ -152,6 +147,7 @@ header {
     }
   }
 }
+
 /*#endregion*/
 
 /*#region About Me*/
@@ -184,14 +180,16 @@ header {
       margin: auto;
       color: $def-light;
 
-      .title > h1 {
+      .title>h1 {
         font-size: 75px;
         font-weight: 300;
       }
+
       #linkedin {
         margin-left: 10px;
       }
-      .smBtn > button {
+
+      .smBtn>button {
         margin: 20px auto;
         width: 150px;
         height: 50px;
@@ -209,6 +207,7 @@ header {
           i {
             font-size: 30px;
           }
+
           p {
             text-align: justify;
             font-size: 15px;
@@ -218,6 +217,7 @@ header {
         &:hover {
           transition: 400ms;
           background: $def-light;
+
           a,
           i,
           p {
@@ -225,8 +225,10 @@ header {
           }
         }
       }
+
       .descr {
         font-size: 12px;
+
         p {
           margin-top: 10px;
         }
@@ -234,6 +236,7 @@ header {
     }
   }
 }
+
 /*#endregion*/
 
 /*#region Skills*/
@@ -252,6 +255,7 @@ header {
       font-size: 50px;
       margin-top: 150px;
       text-align: center;
+
       h1 {
         font-weight: 300;
         color: $def-light;
@@ -266,7 +270,7 @@ header {
       justify-content: center;
       align-items: center;
       gap: 20px;
-  
+
       .card {
         height: 200px;
         width: 200px;
@@ -276,18 +280,18 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-  
-        .card-head > i {
+
+        .card-head>i {
           font-size: 75px;
           margin-top: 10px;
         }
-  
+
         .card-body {
           width: 75%;
           display: flex;
           margin-top: 45px;
           gap: 5px;
-  
+
           .bar {
             height: 5px;
             width: 40px;
@@ -297,58 +301,21 @@ header {
       }
     }
   }
-  
+
 }
+
 /*#endregion*/
 
-@keyframes lampWink {
-  0% {
-    opacity: 0;
-  }
-
-  25% {
-    opacity: 0.8;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  65% {
-    opacity: 0.45;
-  }
-
-  75% {
-    opacity: 0.6;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@media (max-width: 508px) {
+@media (max-width: 768px) {
   header {
-    display: flex;
-
-    .menu {
+    #btn-mobile {
+      display: block;
+    }
+    #menu { 
       display: none;
     }
-
-    .burger {
+    #nav.active #menu {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-
-      .bar {
-        height: 5px;
-        width: 35px;
-        margin: 5px;
-        background: $def-light;
-        border-radius: 2px;
-      }
     }
   }
 
@@ -361,7 +328,7 @@ header {
       justify-content: center;
       align-items: center;
 
-      .lottie > lottie-player {
+      .lottie>lottie-player {
         margin-top: 50px;
         width: 100%;
       }
@@ -372,19 +339,21 @@ header {
         h1 {
           font-size: 42px;
         }
+
         h2 {
           font-size: 24px;
         }
+
         button {
           height: 45px;
           width: 180px;
 
-          a > p {
+          a>p {
             padding: auto;
             font-size: 15px;
           }
 
-          
+
         }
       }
     }
@@ -407,23 +376,72 @@ header {
         }
       }
 
-      .profItems > .title h1 {
+      .profItems>.title h1 {
         font-size: 60px;
       }
 
-      .profItems > .smBtn {
+      .profItems>.smBtn {
         display: flex;
       }
 
-      .profItems > .descr {
+      .profItems>.descr {
         text-align: justify;
       }
     }
   }
 
   #skills {
-    .elements > .title > h1 {
+    .elements>.title>h1 {
       font-size: 45px;
+    }
+  }
+}
+
+@media (max-width:600px) {
+  header {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: 400ms;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
     }
   }
 }

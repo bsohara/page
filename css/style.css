@@ -1,12 +1,9 @@
-/*#region IMPORTS*/ /*#region COLOR DEFAULT*/
+/*#region COLOR DEFAULT*/
 /*#endregion*/
-/*#endregion*/
-/*#region DEFAULT*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -16,6 +13,10 @@
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+body {
+  font-family: "segoe ui";
 }
 
 .success {
@@ -34,60 +35,48 @@
   background-color: #1a1a1a;
 }
 
-/*#endregion*/
-/*#region Header*/
-header {
-  z-index: 9;
+header .nav {
+  width: 100%;
+  background-color: #1a1a1a;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  background: #1a1a1a;
+  padding: 10px;
+  z-index: 9;
 }
-header .burger {
+header .nav > .nav-header {
+  display: inline;
+}
+header .nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  align-items: center;
+}
+header .nav > .nav-btn {
   display: none;
 }
-header .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
+header .nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
 }
-header .title a {
-  color: #cecece;
+header .nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
   text-decoration: none;
-  font-size: 50px;
-  font-weight: bold;
+  color: #efefef;
 }
-header .menu > ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  height: 120px;
-  border-bottom: 5px solid transparent;
-}
-header .menu > ul li > a {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  height: 120px;
-  color: #cecece;
-}
-header .menu > ul li > a:hover {
-  color: #1a1a1a;
-  background-color: #cecece;
-  border-bottom: 5px solid #3b3b3b;
+header .nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
   transition: 400ms;
 }
+header .nav > #nav-check {
+  display: none;
+}
 
-/*#endregion*/
 /*#region Banner*/
 #banner {
   background: #101010;
@@ -274,46 +263,15 @@ header .menu > ul li > a:hover {
 }
 
 /*#endregion*/
-@keyframes lampWink {
-  0% {
-    opacity: 0;
+@media (max-width: 768px) {
+  header #btn-mobile {
+    display: block;
   }
-  25% {
-    opacity: 0.8;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  65% {
-    opacity: 0.45;
-  }
-  75% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@media (max-width: 508px) {
-  header {
-    display: flex;
-  }
-  header .menu {
+  header #menu {
     display: none;
   }
-  header .burger {
+  header #nav.active #menu {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  header .burger .bar {
-    height: 5px;
-    width: 35px;
-    margin: 5px;
-    background: #cecece;
-    border-radius: 2px;
   }
   #banner {
     height: 120vh;
@@ -371,6 +329,52 @@ header .menu > ul li > a:hover {
   }
   #skills .elements > .title > h1 {
     font-size: 45px;
+  }
+}
+@media (max-width: 600px) {
+  header .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  header .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  header .nav > .nav-btn > label:hover, header .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 400ms;
+  }
+  header .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  header .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  header .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  header .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  header .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
   }
 }
 

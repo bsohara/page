@@ -1,0 +1,1085 @@
+<div id="banner">
+        <div class="container">
+            <div class="elements">
+                <div class="lottie">
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_w51pcehl.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+                </div>
+                <div class="texts">
+                    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Bruno Sohara</h1>
+                    <h2 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Desenvolvedor Front-end</h2>
+                    <button>
+                        <a href="#aboutMe">
+                            <p>Sobre Mim</p>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="aboutMe">
+        <div class="container">
+            <div class="elements">
+                <div class="profImg" data-aos="flip-left" data-aos-duration="1500" data-aos-once="true">
+                    <img src="./img/1563820244433.jpg" alt="Bruno Sohara">
+                </div>
+
+                <div class="profItems">
+                    <div class="title" data-aos="fade-out" data-aos-duration="1000" data-aos-once="true">
+                        <h1>Sobre Mim</h1>
+                    </div>
+                    <div class="smBtn">
+                        <button id="github" data-aos="fade-out" data-aos-duration="1500" data-aos-once="true">
+                            <a href="https://github.com/brunosoharagit" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                                <p>Github</p>
+                            </a>
+                        </button>
+                        <button id="linkedin" data-aos="fade-out" data-aos-duration="1500" data-aos-once="true">
+                            <a href="https://www.linkedin.com/in/bruno-sohara-474770186/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <p>LinkedIn</p>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="descr">
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                            Oi. Meu nome é Bruno. <br> Sou Desenvolvedor Front-End em busca de uma nova oportunidade
+                            para a
+                            área. Gosto de jogos, fotografia e outros passatempos que tenho interesse.
+                        </p>
+                        <p data-aos="fade-up" data-aos-duration="1400" data-aos-once="true">
+                            Trabalhei com diversas tecnologias, assim como Salesforce, utilizando linguagens próprias
+                            como Apex e Lightning Web Components, para desenvovlvimento back-end e front-end,
+                            respectivamente.
+                        </p>
+                        <p data-aos="fade-up" data-aos-duration="1600" data-aos-once="true">
+                            Trabalhei com várias linguagens, com C#, VueJS, entre outros. No entanto,
+                            todas as experiências que pude vivenciar, mexi com algumas linguagens específicas, tais
+                            como: HTML, CSS que são linguagens de marcação e estilização. O que me deespertou interesse
+                            em desenvolver estas linguagens. Além do JavaScript, e alguns frameworks como Bootstrap,
+                            Bulma CSS e outros.
+                        </p>
+                        <p data-aos="fade-up" data-aos-duration="1800" data-aos-once="true">
+                            Estou em busca de uma nova experiência, como Desenvolvedor Front-End. Para quaisquer
+                            dúvidas, contatem em meu LinkedIn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="elements">
+                <div class="title">
+                    <h1>Habilidades</h1>
+                </div>
+                <div class="card-list">
+                    <div class="card" data-aos="flip-left" data-aos-duration="750" data-aos-once="true">
+                        <div class="card-head">
+                            <i class="devicon-html5-plain-wordmark colored"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar success"></div>
+                            <div class="bar success"></div>
+                            <div class="bar success"></div>
+                            <div class="bar success"></div>
+                            <div class="bar success"></div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="flip-left" data-aos-duration="900" data-aos-once="true">
+                        <div class="card-head">
+                            <i class="devicon-css3-plain-wordmark colored"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar success"></div>
+                            <div class="bar success"></div>
+                            <div class="bar success"></div>
+                            <div class="bar success"></div>
+                            <div class="bar success"></div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="flip-left" data-aos-duration="1050" data-aos-once="true">
+                        <div class="card-head">
+                            <i class="devicon-javascript-plain colored"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar warning"></div>
+                            <div class="bar warning"></div>
+                            <div class="bar warning"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="flip-left" data-aos-duration="1200" data-aos-once="true">
+                        <div class="card-head">
+                            <i class="devicon-git-plain-wordmark colored"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar warning"></div>
+                            <div class="bar warning"></div>
+                            <div class="bar warning"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="flip-left" data-aos-duration="1350" data-aos-once="true">
+                        <div class="card-head">
+                            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar warning"></div>
+                            <div class="bar warning"></div>
+                            <div class="bar warning"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-once="true">
+                        <div class="card-head">
+                            <i class="devicon-bulma-plain colored"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar warning"></div>
+                            <div class="bar warning"></div>
+                            <div class="bar warning"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="flip-left" data-aos-duration="1650" data-aos-once="true">
+                        <div class="card-head">
+                            <i class="devicon-react-original-wordmark colored"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar warning"></div>
+                            <div class="bar warning"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="flip-left" data-aos-duration="1800" data-aos-once="true">
+                        <div class="card-head">
+                            <i class="devicon-jest-plain colored"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar danger"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="flip-left" data-aos-duration="1950" data-aos-once="true">
+                        <div class="card-head">
+                            <i class="devicon-typescript-plain colored"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar danger"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="flip-left" data-aos-duration="2100" data-aos-once="true">
+                        <div class="card-head">
+                            <i class="devicon-nodejs-plain colored"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar danger"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="flip-left" data-aos-duration="2250" data-aos-once="true">
+                        <div class="card-head">
+                            <i class="devicon-mongodb-plain colored"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar danger"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="flip-left" data-aos-duration="2400" data-aos-once="true">
+                        <div class="card-head">
+                            <i class="devicon-sequelize-plain-wordmark colored"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar danger"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                            <div class="bar undone"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+
+=========================================================================================================================================
+/*#region IMPORTS*/
+@import "./colors.scss";
+/*#endregion*/
+
+/*#region DEFAULT*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.success {
+  background-color: $success;
+}
+.warning {
+  background-color: $warning;
+}
+.danger {
+  background-color: $danger;
+}
+.undone {
+  background-color: $def-prim-dark;
+}
+/*#endregion*/
+
+/*#region Header*/
+header {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background: $def-prim-dark;
+
+  .burger {
+    display: none;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+
+    a {
+      color: $def-light;
+      text-decoration: none;
+      font-size: 50px;
+      font-weight: bold;
+    }
+  }
+
+  nav > ul.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 120px;
+    border-bottom: 5px solid transparent;
+
+    li > a {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      height: 120px;
+      color: $def-light;
+
+      &:hover {
+        color: $def-prim-dark;
+        background-color: $def-light;
+        border-bottom: 5px solid $def-secn-dark;
+        transition: 400ms;
+      }
+    }
+  }
+}
+/*#endregion*/
+
+/*#region Banner*/
+#banner {
+  background: $def-tert-dark;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  .elements {
+    padding-top: 50px;
+    display: flex;
+
+    .lottie {
+      margin-top: 100px;
+    }
+
+    .texts {
+      margin: auto 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $def-light;
+
+      h1 {
+        font-size: 66px;
+      }
+
+      h2 {
+        font-size: 33px;
+      }
+
+      button {
+        margin-top: 20px;
+        height: 60px;
+        width: 120px;
+        border: 2px solid $def-light;
+        border-radius: 10px;
+        background-color: transparent;
+
+        a {
+          text-decoration: none;
+          color: $def-light;
+
+          p {
+            font-size: 15px;
+            text-transform: uppercase;
+          }
+        }
+
+        &:hover {
+          transition: 400ms;
+          background-color: $def-light;
+          p {
+            color: $def-darks;
+          }
+        }
+      }
+    }
+  }
+}
+/*#endregion*/
+
+/*#region About Me*/
+#aboutMe {
+  min-height: 100vh;
+  background: $def-tert-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  .elements {
+    width: 100%;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 300px;
+
+    .profImg {
+      width: 30%;
+      margin: auto;
+
+      img {
+        width: 80%;
+        border-radius: 50%;
+      }
+    }
+
+    .profItems {
+      width: 70%;
+      margin: auto;
+      color: $def-light;
+
+      .title > h1 {
+        font-size: 75px;
+        font-weight: 300;
+      }
+      #linkedin {
+        margin-left: 10px;
+      }
+      .smBtn > button {
+        margin: 20px auto;
+        width: 150px;
+        height: 50px;
+        border: 2px solid $def-light;
+        border-radius: 10px;
+        background: transparent;
+
+        a {
+          color: $def-light;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          text-decoration: none;
+
+          i {
+            font-size: 30px;
+          }
+          p {
+            text-align: justify;
+            font-size: 15px;
+          }
+        }
+
+        &:hover {
+          transition: 400ms;
+          background: $def-light;
+          a,
+          i,
+          p {
+            color: $def-darks;
+          }
+        }
+      }
+      .descr {
+        font-size: 12px;
+        p {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+/*#endregion*/
+
+/*#region Skills*/
+#skills {
+  min-height: 100vh;
+  background: $def-quat-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  .elements {
+    display: block;
+
+    .title {
+      font-size: 50px;
+      margin-top: 150px;
+      text-align: center;
+      h1 {
+        font-weight: 300;
+        color: $def-light;
+      }
+    }
+
+    .card-list {
+      margin-top: 50px;
+      margin-bottom: 150px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  
+      .card {
+        height: 200px;
+        width: 200px;
+        background: $def-secn-dark;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+        .card-head > i {
+          font-size: 75px;
+          margin-top: 10px;
+        }
+  
+        .card-body {
+          width: 75%;
+          display: flex;
+          margin-top: 45px;
+          gap: 5px;
+  
+          .bar {
+            height: 5px;
+            width: 40px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  
+}
+/*#endregion*/
+
+@keyframes lampWink {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  65% {
+    opacity: 0.45;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 508px) {
+  header {
+    display: flex;
+
+    nav > ul.menu {
+      display: none;
+    }
+
+    nav > .burger {
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      .bar {
+        height: 5px;
+        width: 35px;
+        margin: 5px;
+        background: $def-light;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  #banner {
+    height: 120vh;
+
+    .elements {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .lottie > lottie-player {
+        margin-top: 50px;
+        width: 100%;
+      }
+
+      .texts {
+        text-align: center;
+
+        h1 {
+          font-size: 42px;
+        }
+        h2 {
+          font-size: 24px;
+        }
+        button {
+          height: 45px;
+          width: 180px;
+
+          a > p {
+            padding: auto;
+            font-size: 15px;
+          }
+
+          
+        }
+      }
+    }
+  }
+
+  #aboutMe {
+    padding-top: 150px;
+
+    .elements {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .profImg {
+        padding: auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .profItems > .title h1 {
+        font-size: 60px;
+      }
+
+      .profItems > .smBtn {
+        display: flex;
+      }
+
+      .profItems > .descr {
+        text-align: justify;
+      }
+    }
+  }
+
+  #skills {
+    .elements > .title > h1 {
+      font-size: 45px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#region IMPORTS*/
+@import "./colors.scss";
+/*#endregion*/
+
+/*#region DEFAULT*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.success {
+  background-color: $success;
+}
+
+.warning {
+  background-color: $warning;
+}
+
+.danger {
+  background-color: $danger;
+}
+
+.undone {
+  background-color: $def-prim-dark;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*#endregion*/
+
+/*#region Header*/
+header {
+  background: $def-secn-dark;
+  
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+
+    .bar, 
+    &:after,
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 5px;
+      background: #fff;
+      margin: 6px 0px;
+      transition: 400ms;
+    }
+
+    .is-active:after {
+      transform: rotate(-45deg) translate(-9px, -6px);
+    }
+  }
+}
+
+/*#endregion*/
+
+/*#region Banner*/
+#banner {
+  background: $def-tert-dark;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  .elements {
+    padding-top: 50px;
+    display: flex;
+
+    .lottie {
+      margin-top: 100px;
+    }
+
+    .texts {
+      margin: auto 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $def-light;
+
+      h1 {
+        font-size: 66px;
+      }
+
+      h2 {
+        font-size: 33px;
+      }
+
+      button {
+        margin-top: 20px;
+        height: 60px;
+        width: 120px;
+        border: 2px solid $def-light;
+        border-radius: 10px;
+        background-color: transparent;
+
+        a {
+          text-decoration: none;
+          color: $def-light;
+
+          p {
+            font-size: 15px;
+            text-transform: uppercase;
+          }
+        }
+
+        &:hover {
+          transition: 400ms;
+          background-color: $def-light;
+
+          p {
+            color: $def-darks;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*#endregion*/
+
+/*#region About Me*/
+#aboutMe {
+  min-height: 100vh;
+  background: $def-tert-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  .elements {
+    width: 100%;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 300px;
+
+    .profImg {
+      width: 30%;
+      margin: auto;
+
+      img {
+        width: 80%;
+        border-radius: 50%;
+      }
+    }
+
+    .profItems {
+      width: 70%;
+      margin: auto;
+      color: $def-light;
+
+      .title>h1 {
+        font-size: 75px;
+        font-weight: 300;
+      }
+
+      #linkedin {
+        margin-left: 10px;
+      }
+
+      .smBtn>button {
+        margin: 20px auto;
+        width: 150px;
+        height: 50px;
+        border: 2px solid $def-light;
+        border-radius: 10px;
+        background: transparent;
+
+        a {
+          color: $def-light;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          text-decoration: none;
+
+          i {
+            font-size: 30px;
+          }
+
+          p {
+            text-align: justify;
+            font-size: 15px;
+          }
+        }
+
+        &:hover {
+          transition: 400ms;
+          background: $def-light;
+
+          a,
+          i,
+          p {
+            color: $def-darks;
+          }
+        }
+      }
+
+      .descr {
+        font-size: 12px;
+
+        p {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+/*#endregion*/
+
+/*#region Skills*/
+#skills {
+  min-height: 100vh;
+  background: $def-quat-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  .elements {
+    display: block;
+
+    .title {
+      font-size: 50px;
+      margin-top: 150px;
+      text-align: center;
+
+      h1 {
+        font-weight: 300;
+        color: $def-light;
+      }
+    }
+
+    .card-list {
+      margin-top: 50px;
+      margin-bottom: 150px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .card {
+        height: 200px;
+        width: 200px;
+        background: $def-secn-dark;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .card-head>i {
+          font-size: 75px;
+          margin-top: 10px;
+        }
+
+        .card-body {
+          width: 75%;
+          display: flex;
+          margin-top: 45px;
+          gap: 5px;
+
+          .bar {
+            height: 5px;
+            width: 40px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/*#endregion*/
+
+@media (max-width: 768px) {
+  header {
+    #btn-mobile {
+      display: block;
+    }
+    #menu { 
+      display: none;
+    }
+    #nav.active #menu {
+      display: flex;
+    }
+  }
+
+  #banner {
+    height: 120vh;
+
+    .elements {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .lottie>lottie-player {
+        margin-top: 50px;
+        width: 100%;
+      }
+
+      .texts {
+        text-align: center;
+
+        h1 {
+          font-size: 42px;
+        }
+
+        h2 {
+          font-size: 24px;
+        }
+
+        button {
+          height: 45px;
+          width: 180px;
+
+          a>p {
+            padding: auto;
+            font-size: 15px;
+          }
+
+
+        }
+      }
+    }
+  }
+
+  #aboutMe {
+    padding-top: 150px;
+
+    .elements {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .profImg {
+        padding: auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .profItems>.title h1 {
+        font-size: 60px;
+      }
+
+      .profItems>.smBtn {
+        display: flex;
+      }
+
+      .profItems>.descr {
+        text-align: justify;
+      }
+    }
+  }
+
+  #skills {
+    .elements>.title>h1 {
+      font-size: 45px;
+    }
+  }
+}
