@@ -44,16 +44,19 @@ header .nav {
   right: 0;
   padding: 10px;
   z-index: 9;
+  color: #cecece;
 }
 header .nav > .nav-header {
   display: inline;
 }
 header .nav > .nav-header > .nav-title {
   display: inline-block;
-  font-size: 22px;
+  font-size: 1.5rem;
   color: #fff;
   padding: 10px 10px 10px 10px;
-  align-items: center;
+}
+header .nav > .nav-header > .nav-title a {
+  color: #cecece;
 }
 header .nav > .nav-btn {
   display: none;
@@ -65,7 +68,7 @@ header .nav > .nav-links {
 }
 header .nav > .nav-links > a {
   display: inline-block;
-  padding: 13px 10px 13px 10px;
+  padding: 13px 20px 13px 20px;
   text-decoration: none;
   color: #efefef;
 }
@@ -332,8 +335,30 @@ header .nav > #nav-check {
   }
 }
 @media (max-width: 600px) {
+  header .nav {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  header .nav > .nav-header > {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  header .nav > .nav-header > .nav-title {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  header .nav > .nav-header > .nav-title a {
+    font-size: 9px;
+    font-weight: bolder;
+  }
   header .nav > .nav-btn {
-    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     position: absolute;
     right: 0px;
     top: 0px;
@@ -343,9 +368,12 @@ header .nav > #nav-check {
     width: 50px;
     height: 50px;
     padding: 13px;
+    justify-content: center;
+    align-items: center;
   }
-  header .nav > .nav-btn > label:hover, header .nav #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
+  header .nav > .nav-btn > label:hover,
+header .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(8, 8, 8, 0.9);
     transition: 400ms;
   }
   header .nav > .nav-btn > label > span {
@@ -358,12 +386,12 @@ header .nav > #nav-check {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
+    background-color: rgba(8, 8, 8, 0.9);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 50px;
-    left: 0px;
+    right: 0px;
   }
   header .nav > .nav-links > a {
     display: block;
