@@ -425,7 +425,7 @@ header {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      gap: 25px;
 
       .card {
         height: 600px;
@@ -440,7 +440,7 @@ header {
           height: 30%;
           height: 245px;
           width: 100%;
-          padding: 10px;
+          padding: 20px;
           border-radius: 15px;
         }
 
@@ -465,7 +465,7 @@ header {
           display: flex;
           justify-content: space-between;
           padding: 25px;
-          gap: 10px;
+          gap: 20px;
 
           a {
             text-decoration: none;
@@ -478,6 +478,13 @@ header {
             align-items: center;
             border-radius: 15px;
             font-size: 12px;
+
+            &:hover {
+              background: $def-quat-dark;
+              transition: 400ms ease;
+              color: $def-light;
+
+            }
           }
         }
       }
