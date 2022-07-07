@@ -418,6 +418,32 @@ header .nav > #nav-check {
 }
 
 /*#endregion*/
+/*#region Footer*/
+footer {
+  min-height: 120px;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+}
+footer .items {
+  color: #cecece;
+  padding: 40px;
+  width: 100%;
+  display: flex;
+}
+footer .items .content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+footer .items .copyright {
+  height: 100%;
+  width: 50%;
+  text-align: justify;
+}
+
+/*#endregion*/
 /*#region Media*/
 @media (max-width: 768px) {
   header #btn-mobile {
@@ -511,6 +537,14 @@ header .nav > #nav-check {
   }
   #projects .elements .descr > p {
     text-align: center;
+  }
+  footer .items {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer .items .copyright {
+    margin-top: 50px;
   }
 }
 @media (max-width: 678px) {

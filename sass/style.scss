@@ -494,6 +494,37 @@ header {
 
 /*#endregion*/
 
+/*#region Footer*/
+footer {
+  min-height: 120px;
+  background: $def-prim-dark;
+  display: flex;
+  justify-content: space-between;
+  
+
+  .items {
+    color: $def-light;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 50%;
+    }
+
+    .copyright {
+      height: 100%;
+      width: 50%;
+      text-align: justify;
+    }
+  }
+}
+
+/*#endregion*/
+
 /*#region Media*/
 @media (max-width: 768px) {
   header {
@@ -618,6 +649,18 @@ header {
 
       .descr>p {
         text-align: center;
+      }
+    }
+  }
+
+  footer {
+    .items {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .copyright {
+        margin-top: 50px; 
       }
     }
   }
