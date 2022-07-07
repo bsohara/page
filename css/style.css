@@ -541,10 +541,16 @@ footer .items .copyright {
   footer .items {
     flex-direction: column;
     align-items: center;
+  }
+  footer .items .content {
     text-align: center;
+  }
+  footer .items .content h3 {
+    font-size: 30px;
   }
   footer .items .copyright {
     margin-top: 50px;
+    text-align: center;
   }
 }
 @media (max-width: 678px) {
