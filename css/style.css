@@ -430,17 +430,16 @@ footer .items {
   padding: 40px;
   width: 100%;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 footer .items .content {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 50%;
 }
 footer .items .copyright {
-  height: 100%;
-  width: 50%;
-  text-align: justify;
+  display: flex;
+  flex-direction: column;
 }
 
 /*#endregion*/
