@@ -158,7 +158,7 @@ header .nav > #nav-check {
   margin-bottom: 300px;
 }
 #aboutMe .elements .profImg {
-  width: 30%;
+  width: 40%;
   margin: auto;
 }
 #aboutMe .elements .profImg img {
@@ -166,7 +166,7 @@ header .nav > #nav-check {
   border-radius: 50%;
 }
 #aboutMe .elements .profItems {
-  width: 70%;
+  width: 60%;
   margin: auto;
   color: #cecece;
 }
@@ -209,10 +209,11 @@ header .nav > #nav-check {
   color: #030303;
 }
 #aboutMe .elements .profItems .descr {
-  font-size: 12px;
+  font-size: 15px;
 }
 #aboutMe .elements .profItems .descr p {
   margin-top: 10px;
+  text-align: justify;
 }
 
 /*#endregion*/

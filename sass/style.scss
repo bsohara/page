@@ -181,7 +181,7 @@ header {
     margin-bottom: 300px;
 
     .profImg {
-      width: 30%;
+      width: 40%;
       margin: auto;
 
       img {
@@ -191,7 +191,7 @@ header {
     }
 
     .profItems {
-      width: 70%;
+      width: 60%;
       margin: auto;
       color: $def-light;
 
@@ -242,10 +242,11 @@ header {
       }
 
       .descr {
-        font-size: 12px;
+        font-size: 15px;
 
         p {
           margin-top: 10px;
+          text-align: justify;
         }
       }
     }
@@ -757,5 +758,4 @@ footer {
     }
   }
 }
-
 /*#endregion*/
