@@ -1,0 +1,627 @@
+/*#region COLOR DEFAULT*/
+/*#endregion*/
+/*#region Default Stylizing*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body {
+  font-family: "segoe ui";
+}
+
+.success {
+  background-color: #49e749;
+}
+
+.warning {
+  background-color: #e5ee66;
+}
+
+.danger {
+  background-color: #ff6666;
+}
+
+.undone {
+  background-color: #1a1a1a;
+}
+
+/*#endregion*/
+/*#region Header*/
+header .nav {
+  width: 100%;
+  background-color: #1a1a1a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 100;
+  color: #cecece;
+}
+header .nav > .nav-header {
+  display: inline;
+}
+header .nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+header .nav > .nav-header > .nav-title a {
+  color: #cecece;
+}
+header .nav > .nav-btn {
+  display: none;
+}
+header .nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  border-left: 5px solid transparent;
+}
+header .nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 20px 13px 20px;
+  text-decoration: none;
+  color: #efefef;
+  border-left: 5px solid transparent;
+}
+header .nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 400ms ease;
+  border-left: 5px solid #3b3b3b;
+}
+header .nav > #nav-check {
+  display: none;
+}
+
+/*#endregion*/
+/*#region Banner*/
+#banner {
+  background: #101010;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#banner .elements {
+  padding-top: 50px;
+  display: flex;
+}
+#banner .elements .lottie {
+  margin-top: 100px;
+}
+#banner .elements .texts {
+  margin: auto 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #cecece;
+}
+#banner .elements .texts h1 {
+  font-size: 66px;
+}
+#banner .elements .texts h2 {
+  font-size: 33px;
+}
+#banner .elements .texts button {
+  margin-top: 20px;
+  height: 60px;
+  width: 120px;
+  border: 2px solid #cecece;
+  border-radius: 10px;
+  background-color: transparent;
+}
+#banner .elements .texts button a {
+  text-decoration: none;
+  color: #cecece;
+}
+#banner .elements .texts button a p {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+#banner .elements .texts button:hover {
+  transition: 400ms;
+  background-color: #cecece;
+}
+#banner .elements .texts button:hover p {
+  color: #030303;
+}
+
+/*#endregion*/
+/*#region About Me*/
+#aboutMe {
+  min-height: 100vh;
+  background: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#aboutMe .elements {
+  width: 100%;
+  display: flex;
+  margin-top: 150px;
+  margin-bottom: 300px;
+}
+#aboutMe .elements .profImg {
+  width: 40%;
+  margin: auto;
+}
+#aboutMe .elements .profImg img {
+  width: 80%;
+  border-radius: 50%;
+}
+#aboutMe .elements .profItems {
+  width: 60%;
+  margin: auto;
+  color: #cecece;
+}
+#aboutMe .elements .profItems .title > h1 {
+  font-size: 75px;
+  font-weight: 300;
+}
+#aboutMe .elements .profItems #linkedin {
+  margin-left: 10px;
+}
+#aboutMe .elements .profItems .smBtn > button {
+  margin: 20px auto;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #cecece;
+  border-radius: 10px;
+  background: transparent;
+}
+#aboutMe .elements .profItems .smBtn > button a {
+  color: #cecece;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+#aboutMe .elements .profItems .smBtn > button a i {
+  font-size: 30px;
+}
+#aboutMe .elements .profItems .smBtn > button a p {
+  text-align: justify;
+  font-size: 15px;
+}
+#aboutMe .elements .profItems .smBtn > button:hover {
+  transition: 400ms;
+  background: #cecece;
+}
+#aboutMe .elements .profItems .smBtn > button:hover a,
+#aboutMe .elements .profItems .smBtn > button:hover i,
+#aboutMe .elements .profItems .smBtn > button:hover p {
+  color: #030303;
+}
+#aboutMe .elements .profItems .descr {
+  font-size: 15px;
+}
+#aboutMe .elements .profItems .descr p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/*#endregion*/
+/*#region Skills*/
+#skills {
+  min-height: 100vh;
+  background: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#skills .elements {
+  display: block;
+}
+#skills .elements .title {
+  font-size: 50px;
+  margin-top: 150px;
+  text-align: center;
+}
+#skills .elements .title h1 {
+  font-weight: 300;
+  color: #cecece;
+}
+#skills .elements .card-list {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#skills .elements .card-list .card {
+  height: 200px;
+  width: 200px;
+  background: #3b3b3b;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#skills .elements .card-list .card .card-head > i {
+  font-size: 75px;
+  margin-top: 10px;
+}
+#skills .elements .card-list .card .card-body {
+  width: 75%;
+  display: flex;
+  margin-top: 45px;
+  gap: 5px;
+}
+#skills .elements .card-list .card .card-body .bar {
+  height: 5px;
+  width: 40px;
+  border-radius: 5px;
+}
+
+/*#endregion*/
+/*#region My Experiences*/
+#myXp {
+  background: #101010;
+  min-height: 100vh;
+  display: flex;
+}
+#myXp .elements {
+  padding-top: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #cecece;
+  min-height: auto;
+}
+#myXp .elements .xp-title {
+  width: 35%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+#myXp .elements .xp-title h1 {
+  font-size: 3em;
+  font-weight: 200;
+}
+#myXp .elements .xp-title i {
+  font-size: 3em;
+}
+#myXp .elements .xp-lists {
+  display: inline-block;
+  margin-top: 4em;
+  width: 65%;
+}
+#myXp .elements .xp-lists .xp-card {
+  padding: 10px;
+}
+#myXp .elements .xp-lists .xp-card .card-title {
+  display: flex;
+  align-items: center;
+  margin: 1.5em auto;
+  gap: 1em;
+}
+#myXp .elements .xp-lists .xp-card .card-time {
+  display: flex;
+  align-items: center;
+  margin: 2em auto;
+  gap: 1em;
+}
+#myXp .elements .xp-lists .xp-card .card-descr > p {
+  text-align: justify;
+}
+
+/*#endregion*/
+/*#region Projects*/
+#projects {
+  min-height: 100vh;
+  background: #121212;
+  color: #cecece;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 5em 2.5em;
+}
+#projects .elements {
+  display: flex;
+  flex-direction: column;
+}
+#projects .elements .title > h1 {
+  padding: auto;
+  font-size: 90px;
+  font-weight: 100;
+}
+#projects .elements .descr > p {
+  padding: auto;
+  font-size: 20px;
+}
+#projects .elements .projCards {
+  padding-top: 5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+#projects .elements .projCards .card {
+  height: 600px;
+  width: 350px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  color: #cecece;
+}
+#projects .elements .projCards .card .card-head > img {
+  height: 30%;
+  height: 245px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+}
+#projects .elements .projCards .card .card-body {
+  height: 40%;
+  padding: 15px;
+}
+#projects .elements .projCards .card .card-body h3 {
+  font-size: 35px;
+  text-align: center;
+}
+#projects .elements .projCards .card .card-body p {
+  margin-top: 15px;
+  font-size: 12px;
+  padding: 10px;
+}
+#projects .elements .projCards .card .card-footer {
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  gap: 20px;
+}
+#projects .elements .projCards .card .card-footer a {
+  text-decoration: none;
+  height: 50px;
+  width: 150px;
+  background-color: #000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 12px;
+}
+#projects .elements .projCards .card .card-footer a:hover {
+  background: #121212;
+  transition: 400ms ease;
+  color: #cecece;
+}
+
+/*#endregion*/
+/*#region Footer*/
+footer {
+  min-height: 120px;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+}
+footer .items {
+  color: #cecece;
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .items .content {
+  display: flex;
+  flex-direction: column;
+}
+footer .items .copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+/*#endregion*/
+/*#region Media*/
+@media (max-width: 768px) {
+  header #btn-mobile {
+    display: block;
+  }
+  header #menu {
+    display: none;
+  }
+  header #nav.active #menu {
+    display: flex;
+  }
+  #banner {
+    height: 120vh;
+  }
+  #banner .elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner .elements .lottie > lottie-player {
+    margin-top: 50px;
+    width: 100%;
+  }
+  #banner .elements .texts {
+    text-align: center;
+  }
+  #banner .elements .texts h1 {
+    font-size: 42px;
+  }
+  #banner .elements .texts h2 {
+    font-size: 24px;
+  }
+  #banner .elements .texts button {
+    height: 45px;
+    width: 180px;
+  }
+  #banner .elements .texts button a > p {
+    padding: auto;
+    font-size: 15px;
+  }
+  #aboutMe {
+    padding-top: 150px;
+  }
+  #aboutMe .elements {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #aboutMe .elements .profImg {
+    padding: auto;
+  }
+  #aboutMe .elements .profImg img {
+    width: 100%;
+  }
+  #aboutMe .elements .profItems > .title h1 {
+    font-size: 60px;
+  }
+  #aboutMe .elements .profItems > .smBtn {
+    display: flex;
+  }
+  #aboutMe .elements .profItems > .descr {
+    text-align: justify;
+  }
+  #skills .elements > .title > h1 {
+    font-size: 45px;
+  }
+  #myXp .elements {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  #myXp .elements .xp-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #projects {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5em 2.5em;
+  }
+  #projects .elements .title > h1 {
+    font-size: 65px;
+    font-weight: 100;
+    text-align: center;
+  }
+  #projects .elements .descr > p {
+    text-align: center;
+  }
+  footer .items {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .items .content {
+    text-align: center;
+  }
+  footer .items .content h3 {
+    font-size: 30px;
+  }
+  footer .items .copyright {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+@media (max-width: 678px) {
+  header .nav {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  header .nav > .nav-header > {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  header .nav > .nav-header > .nav-title {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  header .nav > .nav-header > .nav-title a {
+    font-size: 9px;
+    font-weight: bolder;
+  }
+  header .nav > .nav-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  header .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    justify-content: center;
+    align-items: center;
+  }
+  header .nav > .nav-btn > label:hover,
+header .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(8, 8, 8, 0.9);
+    transition: 400ms ease;
+  }
+  header .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  header .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.9);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    right: 0px;
+  }
+  header .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  header .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  header .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+/*#endregion*//*# sourceMappingURL=style.css.map */
