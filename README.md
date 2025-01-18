@@ -1,6 +1,10 @@
-# Portfólio - Bruno Sohara
+# Portfólio - Bruno Sohara 2.0
 
-## 🖼 Screenshots
+## 🖼 Screenshots 2.0
+
+Em breve... Com utilização do VUE.JS para criação do layout
+
+## 🖼 Screenshots 1.0
 
 ![image](https://user-images.githubusercontent.com/61017539/176713841-bc31c162-6fb9-428d-ad93-9539976b74d2.png)
 
